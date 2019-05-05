@@ -1,4 +1,7 @@
-import Link from 'next/link'
+import Link from "next/link";
+import PropTypes from "prop-types";
+
+// type Post = { id: string, title: string };
 
 const PostLink = ({ post }) => (
   <li>
@@ -22,6 +25,10 @@ const PostLink = ({ post }) => (
       }
     `}</style>
   </li>
-)
+);
 
-export default PostLink
+PostLink.propTypes = {
+  post: PropTypes.object
+};
+
+export default PostLink;

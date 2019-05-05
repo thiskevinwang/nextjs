@@ -1,25 +1,24 @@
-import Layout from '../components/MyLayout.js'
-import Link from 'next/link'
-import PostLink from '../components/PostLink.js'
+import Layout from "../components/MyLayout.js";
+import Link from "next/link";
+import PostLink from "../components/PostLink.js";
 
-function getPosts () {
+function getPosts() {
   return [
-    { id: 'hello-nextjs', title: 'Hello Next.js'},
-    { id: 'learn-nextjs', title: 'Learn Next.js is awesome'},
-    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT'},
-  ]
+    { id: "hello-nextjs", title: "Hello Next.js" },
+    { id: "learn-nextjs", title: "Learn Next.js is awesome" },
+    { id: "deploy-nextjs", title: "Deploy apps with ZEIT" }
+  ];
 }
 
 export default () => (
   <Layout>
-    <h1>WHITESPACE</h1>
+    <h1>Home</h1>
     <ul>
-      {getPosts().map((post) => (
-        <PostLink key={post.id} post={post}/>
+      {getPosts().map(post => (
+        <PostLink key={post.id} post={post} />
       ))}
     </ul>
     <style jsx>{`
-      @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
       h1 {
         font-family: "Montserrat";
       }
@@ -43,4 +42,4 @@ export default () => (
       }
     `}</style>
   </Layout>
-)
+);

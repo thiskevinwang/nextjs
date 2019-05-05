@@ -1,19 +1,20 @@
-import Header from './Header'
+import Header from "./Header";
+import PropTypes from "prop-types";
 
 const layoutStyle = {
   margin: 0,
   padding: 20,
-  border: '1px solid #DDD'
-}
+  border: "1px solid #DDD"
+};
 
-const Layout = (props) => (
+const Layout = props => (
   <div style={layoutStyle}>
     <Header />
     {props.children}
   </div>
-)
+);
 
-export default Layout
+export default Layout;
 
 // other methods of creating a Layout component:
 
