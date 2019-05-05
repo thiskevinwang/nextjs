@@ -22,16 +22,16 @@
   },
   "homepage": "https://github.com/thiskevinwang/nextjs#readme",
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
+    "@material-ui/core": "^3.9.3",
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^7.0.2",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-markdown": "^4.0.6"
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.0.8"
   },
   "devDependencies": {
-    "flow-bin": "^0.93.0",
+    "flow-bin": "^0.98.0",
     "prop-types": "^15.7.2"
   }
 }
