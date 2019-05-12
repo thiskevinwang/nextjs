@@ -7,10 +7,10 @@ const layoutStyle = {
   border: "1px solid #DDD"
 };
 
-const Layout = props => (
+const Layout = ({ children }) => (
   <div style={layoutStyle}>
     <Header />
-    {props.children}
+    {children}
   </div>
 );
 
